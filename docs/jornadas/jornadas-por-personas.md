@@ -1,4 +1,4 @@
-# Jornadas do Usuário no Bazarium
+# Jornadas por Personas no Bazarium
 
 ## Introdução
 As jornadas dos usuários no **Bazarium** representam o fluxo de interações dentro da plataforma, garantindo que cada perfil de usuário tenha uma experiência eficiente e intuitiva. A seguir, são detalhadas as principais jornadas para cada persona.
