@@ -1,0 +1,19 @@
+# Arquivos do Python
+__pycache__/
+*.py[cod]
+*.swp
+*.swo
+.DS_Store
+
+# Pastas geradas pelo MkDocs
+/site/
+*.lock
+
+# Configurações e logs
+.env
+.vscode/
+.idea/
+*.log
+
+# Arquivos do MkDocs que não precisam ser versionados
+mkdocs.yml.lock
