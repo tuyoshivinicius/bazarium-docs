@@ -1,187 +1,99 @@
 
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
-    
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      
-        <meta name="description" content="Base de conhecimento do sistema Bazarium">
-      
-      
-        <meta name="author" content="Tuyoshi Vinicius">
-      
-      
-        <link rel="canonical" href="https://tuyoshivinicius.github.io/bazarium-docs/modulos-e-funcionalidades/requisitos/">
-      
-      
-        <link rel="prev" href="../../modelo-de-dominio/bounded-contexts/">
-      
-      
-        <link rel="next" href="../funcionalidades/">
-      
-      
-      <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
-    
-    
-      
-        <title>📋 Requisitos - Documentação Bazarium</title>
-      
-    
-    
-      <link rel="stylesheet" href="../../assets/stylesheets/main.8608ea7d.min.css">
-      
-        
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
-      
-      
+<!DOCTYPE html>
 
-
-    
-    
-      
-    
-    
-      
-        
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-      
-    
-    
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-    
-      
-
-    
-    
-    
-  </head>
-  
-  
-    
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="pink">
-  
-    
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer"></label>
-    <div data-md-component="skip">
-      
-        
-        <a href="#requisitos-do-bazarium" class="md-skip">
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Base de conhecimento do sistema Bazarium" name="description"/>
+<meta content="Tuyoshi Vinicius" name="author"/>
+<link href="https://tuyoshivinicius.github.io/bazarium-docs/modulos-e-funcionalidades/requisitos/" rel="canonical"/>
+<link href="../../modelo-de-dominio/bounded-contexts/" rel="prev"/>
+<link href="../funcionalidades/" rel="next"/>
+<link href="../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.6.5" name="generator"/>
+<title>📋 Requisitos - Documentação Bazarium</title>
+<link href="../../assets/stylesheets/main.8608ea7d.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="pink" data-md-color-primary="deep-purple" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#requisitos-do-bazarium">
           Skip to content
         </a>
-      
-    </div>
-    <div data-md-component="announce">
-      
-    </div>
-    
-    
-      
-
+</div>
+<div data-md-component="announce">
+</div>
 <header class="md-header" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Documentação Bazarium" class="md-header__button md-logo" aria-label="Documentação Bazarium" data-md-component="logo">
-      
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
-
-    </a>
-    <label class="md-header__button md-icon" for="__drawer">
-      
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
-    </label>
-    <div class="md-header__title" data-md-component="header-title">
-      <div class="md-header__ellipsis">
-        <div class="md-header__topic">
-          <span class="md-ellipsis">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="Documentação Bazarium" class="md-header__button md-logo" data-md-component="logo" href="../.." title="Documentação Bazarium">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
             Documentação Bazarium
           </span>
-        </div>
-        <div class="md-header__topic" data-md-component="header-topic">
-          <span class="md-ellipsis">
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
             
               📋 Requisitos
             
           </span>
-        </div>
-      </div>
-    </div>
-    
-      
-    
-    
-    
-    
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
-        </button>
-      </nav>
-      
-        <div class="md-search__suggest" data-md-component="search-suggest"></div>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list" role="presentation"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
+<ol class="md-search-result__list" role="presentation"></ol>
 </div>
-    
-    
-  </nav>
-  
+</div>
+</div>
+</div>
+</div>
+</nav>
 </header>
-    
-    <div class="md-container" data-md-component="container">
-      
-      
-        
-          
-            
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
-  <div class="md-grid">
-    <ul class="md-tabs__list">
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+<div class="md-container" data-md-component="container">
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../..">
         
   
     
@@ -189,1017 +101,581 @@
   Home
 
       </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../visao-geral-da-documentacao/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../visao-geral-da-documentacao/">
           
   
   🎯 Visão Geral da Documentação
 
         </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../modelo-de-dominio/dominio/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../modelo-de-dominio/dominio/">
           
   
   🏗️ Modelo de Domínio
 
         </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-    
-  
-  
-    
-    
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+</li>
+<li class="md-tabs__item md-tabs__item--active">
+<a class="md-tabs__link" href="./">
           
   
   ⚙️ Módulos e Funcionalidades
 
         </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../jornadas/macro-jornadas/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../jornadas/macro-jornadas/">
           
   
   🚀 Jornadas
 
         </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../event-storming/criar-conta-e-definir-perfil-de-usuario/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../event-storming/gestao-de-perfis-de-usuario/jornada-do-comprador/criar-conta-e-definir-perfil-de-usuario/">
           
   
   🚀 Event-Storming
 
         </a>
-      </li>
-    
-  
-
-      
-    </ul>
-  </div>
+</li>
+</ul>
+</div>
 </nav>
-          
-        
-      
-      <main class="md-main" data-md-component="main">
-        <div class="md-main__inner md-grid">
-          
-            
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-
-  
-
-
-  
-
-<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
-  <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Documentação Bazarium" class="md-nav__button md-logo" aria-label="Documentação Bazarium" data-md-component="logo">
-      
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
-
-    </a>
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Documentação Bazarium" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="Documentação Bazarium">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+</a>
     Documentação Bazarium
   </label>
-  
-  <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../..">
+<span class="md-ellipsis">
     Home
     
   </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+<span class="md-ellipsis">
     🎯 Visão Geral da Documentação
     
   </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
-            <span class="md-nav__icon md-icon"></span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
             🎯 Visão Geral da Documentação
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../visao-geral-da-documentacao/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../visao-geral-da-documentacao/">
+<span class="md-ellipsis">
     📌 Introdução
     
   </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../visao-geral-da-documentacao/objetivo/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../visao-geral-da-documentacao/objetivo/">
+<span class="md-ellipsis">
     🎯 Objetivos
     
   </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../visao-geral-da-documentacao/publico-alvo/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../visao-geral-da-documentacao/publico-alvo/">
+<span class="md-ellipsis">
     👥 Público-Alvo
     
   </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../visao-geral-da-documentacao/sobre-o-projeto/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../visao-geral-da-documentacao/sobre-o-projeto/">
+<span class="md-ellipsis">
     📖 Sobre o Projeto
     
   </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+<span class="md-ellipsis">
     🏗️ Modelo de Domínio
     
   </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
             🏗️ Modelo de Domínio
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../modelo-de-dominio/dominio/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../modelo-de-dominio/dominio/">
+<span class="md-ellipsis">
     🌎 Domínio
     
   </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../modelo-de-dominio/personas/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../modelo-de-dominio/personas/">
+<span class="md-ellipsis">
     👤 Personas
     
   </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../modelo-de-dominio/bounded-contexts/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../modelo-de-dominio/bounded-contexts/">
+<span class="md-ellipsis">
     📌 Bounded Contexts
     
   </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    
-    
-    
-      
-        
-        
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+<span class="md-ellipsis">
     ⚙️ Módulos e Funcionalidades
     
   </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
             ⚙️ Módulos e Funcionalidades
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
     📋 Requisitos
     
   </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
     📋 Requisitos
     
   </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
+</a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#introducao" class="md-nav__link">
-    <span class="md-ellipsis">
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#introducao">
+<span class="md-ellipsis">
       Introdução
     </span>
-  </a>
-  
+</a>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#requisitos-funcionais-rf" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#requisitos-funcionais-rf">
+<span class="md-ellipsis">
       📌 Requisitos Funcionais (RF)
     </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📌 Requisitos Funcionais (RF)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#perfis-de-usuario" class="md-nav__link">
-    <span class="md-ellipsis">
+</a>
+<nav aria-label="📌 Requisitos Funcionais (RF)" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#perfis-de-usuario">
+<span class="md-ellipsis">
       👤 Perfis de Usuário
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#cadastro-e-autenticacao" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cadastro-e-autenticacao">
+<span class="md-ellipsis">
       🔐 Cadastro e Autenticação
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#funcionalidades-para-vendedores" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#funcionalidades-para-vendedores">
+<span class="md-ellipsis">
       🏪 Funcionalidades para Vendedores
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#funcionalidades-para-compradores" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#funcionalidades-para-compradores">
+<span class="md-ellipsis">
       🛒 Funcionalidades para Compradores
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#avaliacoes-e-comentarios" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#avaliacoes-e-comentarios">
+<span class="md-ellipsis">
       ⭐ Avaliações e Comentários
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#catalogo-de-produtos-e-pesquisa" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#catalogo-de-produtos-e-pesquisa">
+<span class="md-ellipsis">
       📑 Catálogo de Produtos e Pesquisa
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#pagamentos-e-seguranca" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pagamentos-e-seguranca">
+<span class="md-ellipsis">
       💳 Pagamentos e Segurança
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#sistema-de-envio-e-logistica" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#sistema-de-envio-e-logistica">
+<span class="md-ellipsis">
       🚚 Sistema de Envio e Logística
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#notificacoes-e-comunicacao" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#notificacoes-e-comunicacao">
+<span class="md-ellipsis">
       🔔 Notificações e Comunicação
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#relatorios-e-analises" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#relatorios-e-analises">
+<span class="md-ellipsis">
       📊 Relatórios e Análises
     </span>
-  </a>
-  
+</a>
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#requisitos-nao-funcionais-rnf" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#requisitos-nao-funcionais-rnf">
+<span class="md-ellipsis">
       📌 Requisitos Não Funcionais (RNF)
     </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📌 Requisitos Não Funcionais (RNF)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#desempenho-e-escalabilidade" class="md-nav__link">
-    <span class="md-ellipsis">
+</a>
+<nav aria-label="📌 Requisitos Não Funcionais (RNF)" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#desempenho-e-escalabilidade">
+<span class="md-ellipsis">
       ⚡ Desempenho e Escalabilidade
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#arquitetura-e-extensibilidade" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#arquitetura-e-extensibilidade">
+<span class="md-ellipsis">
       🏗 Arquitetura e Extensibilidade
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#usabilidade-e-experiencia-do-usuario" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#usabilidade-e-experiencia-do-usuario">
+<span class="md-ellipsis">
       🎨 Usabilidade e Experiência do Usuário
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#seguranca" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#seguranca">
+<span class="md-ellipsis">
       🔒 Segurança
     </span>
-  </a>
-  
+</a>
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusao" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#conclusao">
+<span class="md-ellipsis">
       Conclusão
     </span>
-  </a>
-  
+</a>
 </li>
-      
-    </ul>
-  
+</ul>
 </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../funcionalidades/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../funcionalidades/">
+<span class="md-ellipsis">
     🔧 Funcionalidades
     
   </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
-        
-          
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+<span class="md-ellipsis">
     🚀 Jornadas
     
   </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
-            <span class="md-nav__icon md-icon"></span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
             🚀 Jornadas
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../jornadas/macro-jornadas/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../jornadas/macro-jornadas/">
+<span class="md-ellipsis">
     🔄 Macro Jornadas
     
   </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../jornadas/jornadas-do-usuario.md" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../jornadas/jornadas-do-usuario.md">
+<span class="md-ellipsis">
     🚀 Jornadas do Usuário
     
   </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../jornadas/jornadas-por-funcionalidade/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../jornadas/jornadas-por-funcionalidade/">
+<span class="md-ellipsis">
     🔧 Jornadas por Funcionalidades
     
   </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
-        
-          
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+<span class="md-ellipsis">
     🚀 Event-Storming
     
   </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
-            <span class="md-nav__icon md-icon"></span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
             🚀 Event-Storming
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../event-storming/criar-conta-e-definir-perfil-de-usuario/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    🔄 Criar Conta e Definir Perfil de Usuário
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_6_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Gestão de Perfis de Usuário
     
   </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_6_1">
+<span class="md-nav__icon md-icon"></span>
+            Gestão de Perfis de Usuário
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_6_1_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6_1_1" id="__nav_6_1_1_label" tabindex="0">
+<span class="md-ellipsis">
+    👤Jornada do Usuário
     
-  </ul>
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_1_1_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_6_1_1">
+<span class="md-nav__icon md-icon"></span>
+            👤Jornada do Usuário
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../event-storming/gestao-de-perfis-de-usuario/jornada-do-comprador/criar-conta-e-definir-perfil-de-usuario/">
+<span class="md-ellipsis">
+    Criar Conta e Definir Perfil de Usuário
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../event-storming/gestao-de-perfis-de-usuario/jornada-do-comprador/alternar-entre-perfis-de-comprador-e-vendedor/">
+<span class="md-ellipsis">
+    Alternar entre Perfis de Comprador e Vendedor
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../event-storming/gestao-de-perfis-de-usuario/jornada-do-comprador/atualizar-informacoes-pessoais/">
+<span class="md-ellipsis">
+    Atualizar Informações Pessoais
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../event-storming/gestao-de-perfis-de-usuario/jornada-do-comprador/excluir-conta-permanentemente/">
+<span class="md-ellipsis">
+    Excluir Conta Permanentemente
+    
+  </span>
+</a>
+</li>
+</ul>
 </nav>
-                  </div>
-                </div>
-              </div>
-            
-            
-          
-          
-            <div class="md-content" data-md-component="content">
-              <article class="md-content__inner md-typeset">
-                
-                  
-
-
-
-<h1 id="requisitos-do-bazarium">Requisitos do Bazarium<a class="headerlink" href="#requisitos-do-bazarium" title="Permanent link">&para;</a></h1>
-<h2 id="introducao">Introdução<a class="headerlink" href="#introducao" title="Permanent link">&para;</a></h2>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="requisitos-do-bazarium">Requisitos do Bazarium<a class="headerlink" href="#requisitos-do-bazarium" title="Permanent link">¶</a></h1>
+<h2 id="introducao">Introdução<a class="headerlink" href="#introducao" title="Permanent link">¶</a></h2>
 <p>Os requisitos do <strong>Bazarium</strong> definem as funcionalidades e restrições técnicas que a plataforma deve atender para garantir sua operação eficiente e segura. Eles estão organizados em <strong>requisitos funcionais</strong> (RF) e <strong>requisitos não funcionais</strong> (RNF).</p>
-<hr />
-<h2 id="requisitos-funcionais-rf">📌 <strong>Requisitos Funcionais (RF)</strong><a class="headerlink" href="#requisitos-funcionais-rf" title="Permanent link">&para;</a></h2>
+<hr/>
+<h2 id="requisitos-funcionais-rf">📌 <strong>Requisitos Funcionais (RF)</strong><a class="headerlink" href="#requisitos-funcionais-rf" title="Permanent link">¶</a></h2>
 <p>Os requisitos funcionais descrevem as funcionalidades essenciais da plataforma.</p>
-<h3 id="perfis-de-usuario">👤 <strong>Perfis de Usuário</strong><a class="headerlink" href="#perfis-de-usuario" title="Permanent link">&para;</a></h3>
+<h3 id="perfis-de-usuario">👤 <strong>Perfis de Usuário</strong><a class="headerlink" href="#perfis-de-usuario" title="Permanent link">¶</a></h3>
 <ul>
 <li><strong>RF01</strong> - O sistema deverá permitir que cada usuário possua um perfil como Comprador ou Vendedor.</li>
 <li><strong>RF02</strong> - O sistema deverá permitir que os usuários alternem entre os modos Comprador e Vendedor dentro de uma mesma conta.</li>
 <li><strong>RF03</strong> - O sistema deverá permitir que os usuários adicionem foto de perfil e informações de contato, como telefone e endereço.</li>
 <li><strong>RF04</strong> - O sistema deverá permitir que os usuários excluam suas contas permanentemente.</li>
 </ul>
-<h3 id="cadastro-e-autenticacao">🔐 <strong>Cadastro e Autenticação</strong><a class="headerlink" href="#cadastro-e-autenticacao" title="Permanent link">&para;</a></h3>
+<h3 id="cadastro-e-autenticacao">🔐 <strong>Cadastro e Autenticação</strong><a class="headerlink" href="#cadastro-e-autenticacao" title="Permanent link">¶</a></h3>
 <ul>
 <li><strong>RF05</strong> - O sistema deverá fornecer funcionalidades de cadastro e login para os usuários.</li>
 <li><strong>RF06</strong> - O sistema deverá permitir que os usuários atualizem suas informações cadastrais.</li>
 <li><strong>RF07</strong> - O sistema deverá oferecer a opção de login via redes sociais.</li>
 <li><strong>RF08</strong> - O sistema deverá implementar autenticação multifator (MFA) para aumentar a segurança.</li>
 </ul>
-<h3 id="funcionalidades-para-vendedores">🏪 <strong>Funcionalidades para Vendedores</strong><a class="headerlink" href="#funcionalidades-para-vendedores" title="Permanent link">&para;</a></h3>
+<h3 id="funcionalidades-para-vendedores">🏪 <strong>Funcionalidades para Vendedores</strong><a class="headerlink" href="#funcionalidades-para-vendedores" title="Permanent link">¶</a></h3>
 <ul>
 <li><strong>RF09</strong> - O sistema deverá permitir que os vendedores cadastrem produtos no catálogo.</li>
 <li><strong>RF10</strong> - O sistema deverá disponibilizar uma interface para que os vendedores possam acessar a lista de suas vendas.</li>
 <li><strong>RF11</strong> - O sistema deverá permitir que os vendedores atualizem o status de suas vendas.</li>
 <li><strong>RF12</strong> - O sistema deverá permitir que os vendedores criem promoções e cupons de desconto.</li>
 </ul>
-<h3 id="funcionalidades-para-compradores">🛒 <strong>Funcionalidades para Compradores</strong><a class="headerlink" href="#funcionalidades-para-compradores" title="Permanent link">&para;</a></h3>
+<h3 id="funcionalidades-para-compradores">🛒 <strong>Funcionalidades para Compradores</strong><a class="headerlink" href="#funcionalidades-para-compradores" title="Permanent link">¶</a></h3>
 <ul>
 <li><strong>RF13</strong> - O sistema deverá permitir que os compradores adicionem produtos ao carrinho de compras.</li>
 <li><strong>RF14</strong> - O sistema deverá permitir que os compradores finalizem a compra por meio de um checkout.</li>
 <li><strong>RF15</strong> - O sistema deverá gerar um pedido no momento da finalização da compra.</li>
 <li><strong>RF16</strong> - O sistema deverá permitir que os compradores solicitem reembolso ou devolução.</li>
 </ul>
-<h3 id="avaliacoes-e-comentarios">⭐ <strong>Avaliações e Comentários</strong><a class="headerlink" href="#avaliacoes-e-comentarios" title="Permanent link">&para;</a></h3>
+<h3 id="avaliacoes-e-comentarios">⭐ <strong>Avaliações e Comentários</strong><a class="headerlink" href="#avaliacoes-e-comentarios" title="Permanent link">¶</a></h3>
 <ul>
 <li><strong>RF17</strong> - O sistema deverá permitir que os compradores avaliem os produtos após a compra.</li>
 <li><strong>RF18</strong> - O sistema deverá permitir que os compradores publiquem comentários sobre os produtos adquiridos.</li>
 <li><strong>RF19</strong> - O sistema deverá exibir as avaliações e comentários de compradores na página do produto.</li>
 <li><strong>RF20</strong> - O sistema deverá calcular a média das notas recebidas por um vendedor.</li>
 </ul>
-<h3 id="catalogo-de-produtos-e-pesquisa">📑 <strong>Catálogo de Produtos e Pesquisa</strong><a class="headerlink" href="#catalogo-de-produtos-e-pesquisa" title="Permanent link">&para;</a></h3>
+<h3 id="catalogo-de-produtos-e-pesquisa">📑 <strong>Catálogo de Produtos e Pesquisa</strong><a class="headerlink" href="#catalogo-de-produtos-e-pesquisa" title="Permanent link">¶</a></h3>
 <ul>
 <li><strong>RF21</strong> - O sistema deverá disponibilizar um catálogo de produtos.</li>
 <li><strong>RF22</strong> - O sistema deverá permitir que os usuários filtrem e ordenem os produtos no catálogo.</li>
 <li><strong>RF23</strong> - O sistema deverá permitir que os compradores utilizem filtros avançados.</li>
 <li><strong>RF24</strong> - O sistema deverá sugerir produtos com base no histórico de navegação.</li>
 </ul>
-<h3 id="pagamentos-e-seguranca">💳 <strong>Pagamentos e Segurança</strong><a class="headerlink" href="#pagamentos-e-seguranca" title="Permanent link">&para;</a></h3>
+<h3 id="pagamentos-e-seguranca">💳 <strong>Pagamentos e Segurança</strong><a class="headerlink" href="#pagamentos-e-seguranca" title="Permanent link">¶</a></h3>
 <ul>
 <li><strong>RF25</strong> - O sistema deverá permitir que os compradores escolham entre diferentes formas de pagamento.</li>
 <li><strong>RF26</strong> - O sistema deverá processar transações financeiras utilizando gateways seguros.</li>
 <li><strong>RF27</strong> - O sistema deverá permitir a emissão automática de notas fiscais eletrônicas.</li>
 <li><strong>RF28</strong> - O sistema deverá bloquear transações suspeitas e alertar administradores sobre fraudes.</li>
 </ul>
-<h3 id="sistema-de-envio-e-logistica">🚚 <strong>Sistema de Envio e Logística</strong><a class="headerlink" href="#sistema-de-envio-e-logistica" title="Permanent link">&para;</a></h3>
+<h3 id="sistema-de-envio-e-logistica">🚚 <strong>Sistema de Envio e Logística</strong><a class="headerlink" href="#sistema-de-envio-e-logistica" title="Permanent link">¶</a></h3>
 <ul>
 <li><strong>RF29</strong> - O sistema deverá permitir que os vendedores definam opções de envio.</li>
 <li><strong>RF30</strong> - O sistema deverá calcular automaticamente o valor do frete.</li>
 <li><strong>RF31</strong> - O sistema deverá gerar um número de rastreamento para o comprador.</li>
 <li><strong>RF32</strong> - O sistema deverá integrar com APIs de envio para atualização do status do envio.</li>
 </ul>
-<h3 id="notificacoes-e-comunicacao">🔔 <strong>Notificações e Comunicação</strong><a class="headerlink" href="#notificacoes-e-comunicacao" title="Permanent link">&para;</a></h3>
+<h3 id="notificacoes-e-comunicacao">🔔 <strong>Notificações e Comunicação</strong><a class="headerlink" href="#notificacoes-e-comunicacao" title="Permanent link">¶</a></h3>
 <ul>
 <li><strong>RF33</strong> - O sistema deverá ser capaz de notificar os usuários por diferentes canais.</li>
 <li><strong>RF34</strong> - O sistema deverá permitir que vendedores e compradores se comuniquem diretamente pelo sistema.</li>
 <li><strong>RF35</strong> - O sistema deverá enviar alertas automáticos sobre mudanças no status dos pedidos.</li>
 <li><strong>RF36</strong> - O sistema deverá permitir que os administradores enviem anúncios promocionais.</li>
 </ul>
-<h3 id="relatorios-e-analises">📊 <strong>Relatórios e Análises</strong><a class="headerlink" href="#relatorios-e-analises" title="Permanent link">&para;</a></h3>
+<h3 id="relatorios-e-analises">📊 <strong>Relatórios e Análises</strong><a class="headerlink" href="#relatorios-e-analises" title="Permanent link">¶</a></h3>
 <ul>
 <li><strong>RF37</strong> - O sistema deverá fornecer aos vendedores relatórios detalhados sobre suas vendas.</li>
 <li><strong>RF38</strong> - O sistema deverá fornecer relatórios financeiros para os administradores.</li>
 </ul>
-<hr />
-<h2 id="requisitos-nao-funcionais-rnf">📌 <strong>Requisitos Não Funcionais (RNF)</strong><a class="headerlink" href="#requisitos-nao-funcionais-rnf" title="Permanent link">&para;</a></h2>
+<hr/>
+<h2 id="requisitos-nao-funcionais-rnf">📌 <strong>Requisitos Não Funcionais (RNF)</strong><a class="headerlink" href="#requisitos-nao-funcionais-rnf" title="Permanent link">¶</a></h2>
 <p>Os requisitos não funcionais definem critérios de desempenho, segurança e usabilidade.</p>
-<h3 id="desempenho-e-escalabilidade">⚡ <strong>Desempenho e Escalabilidade</strong><a class="headerlink" href="#desempenho-e-escalabilidade" title="Permanent link">&para;</a></h3>
+<h3 id="desempenho-e-escalabilidade">⚡ <strong>Desempenho e Escalabilidade</strong><a class="headerlink" href="#desempenho-e-escalabilidade" title="Permanent link">¶</a></h3>
 <ul>
 <li><strong>RNF01</strong> - O processamento das vendas deverá ser assíncrono.</li>
 <li><strong>RNF02</strong> - O tempo de resposta das páginas do sistema não deverá ultrapassar 2 segundos.</li>
 <li><strong>RNF03</strong> - O sistema deverá suportar pelo menos 10.000 usuários simultâneos.</li>
 <li><strong>RNF04</strong> - O sistema deverá ser capaz de realizar pelo menos 1.000 transações por minuto.</li>
 </ul>
-<h3 id="arquitetura-e-extensibilidade">🏗 <strong>Arquitetura e Extensibilidade</strong><a class="headerlink" href="#arquitetura-e-extensibilidade" title="Permanent link">&para;</a></h3>
+<h3 id="arquitetura-e-extensibilidade">🏗 <strong>Arquitetura e Extensibilidade</strong><a class="headerlink" href="#arquitetura-e-extensibilidade" title="Permanent link">¶</a></h3>
 <ul>
 <li><strong>RNF05</strong> - A arquitetura do sistema deverá ser extensível para suportar novos gateways de pagamento.</li>
 <li><strong>RNF06</strong> - A arquitetura do sistema deverá ser extensível para suportar novas APIs de envio.</li>
 <li><strong>RNF07</strong> - O sistema deverá utilizar arquitetura baseada em microsserviços.</li>
 <li><strong>RNF08</strong> - O sistema deverá ser compatível com diferentes navegadores modernos.</li>
 </ul>
-<h3 id="usabilidade-e-experiencia-do-usuario">🎨 <strong>Usabilidade e Experiência do Usuário</strong><a class="headerlink" href="#usabilidade-e-experiencia-do-usuario" title="Permanent link">&para;</a></h3>
+<h3 id="usabilidade-e-experiencia-do-usuario">🎨 <strong>Usabilidade e Experiência do Usuário</strong><a class="headerlink" href="#usabilidade-e-experiencia-do-usuario" title="Permanent link">¶</a></h3>
 <ul>
 <li><strong>RNF09</strong> - O sistema deverá fornecer uma interface intuitiva e responsiva.</li>
 <li><strong>RNF10</strong> - O sistema deverá apresentar feedback visual e notificações claras.</li>
 <li><strong>RNF11</strong> - O sistema deverá ter um design responsivo.</li>
 <li><strong>RNF12</strong> - O sistema deverá oferecer autocompletar e sugestões inteligentes na busca de produtos.</li>
 </ul>
-<h3 id="seguranca">🔒 <strong>Segurança</strong><a class="headerlink" href="#seguranca" title="Permanent link">&para;</a></h3>
+<h3 id="seguranca">🔒 <strong>Segurança</strong><a class="headerlink" href="#seguranca" title="Permanent link">¶</a></h3>
 <ul>
 <li><strong>RNF13</strong> - O sistema deverá utilizar autenticação segura para login.</li>
 <li><strong>RNF14</strong> - O sistema deverá armazenar e transmitir dados sensíveis de forma criptografada.</li>
@@ -1210,62 +686,34 @@
 <li><strong>RNF19</strong> - O sistema deverá manter logs de auditoria de todas as ações críticas.</li>
 <li><strong>RNF20</strong> - O sistema deverá ter proteção contra injeção de SQL, XSS e CSRF.</li>
 </ul>
-<hr />
-<h2 id="conclusao">Conclusão<a class="headerlink" href="#conclusao" title="Permanent link">&para;</a></h2>
+<hr/>
+<h2 id="conclusao">Conclusão<a class="headerlink" href="#conclusao" title="Permanent link">¶</a></h2>
 <p>Os requisitos do <strong>Bazarium</strong> garantem que a plataforma seja segura, escalável e intuitiva. Essa documentação serve como base para o desenvolvimento e evolução contínua do sistema, assegurando sua conformidade com padrões técnicos e regulatórios.</p>
-
-
-
-
-
-
-
-
-
-
-
-
-                
-              </article>
-            </div>
-          
-          
+</article>
+</div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
-        </div>
-        
-      </main>
-      
-        <footer class="md-footer">
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
   
   
     Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
       Material for MkDocs
     </a>
-  
 </div>
-      
-    </div>
-  </div>
+</div>
+</div>
 </footer>
-      
-    </div>
-    <div class="md-dialog" data-md-component="dialog">
-      <div class="md-dialog__inner md-typeset"></div>
-    </div>
-    
-    
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.expand", "toc.integrate", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
-    
-    
-      <script src="../../assets/javascripts/bundle.f1b6f286.min.js"></script>
-      
-        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
-      
-    
-  </body>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.expand", "toc.integrate", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.4.0/mermaid.min.js"></script>
+</body>
 </html>
