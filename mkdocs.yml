@@ -34,8 +34,8 @@ plugins:
   - table-reader  # Melhor formatação de tabelas
 
 # Configuração de navegação
-nav:  
-  - Home: visao-geral-da-documentacao/index.md  # Define o index da documentação
+nav:    
+    - Home: index.md  # Página inicial com redirecionamento
   - 🎯 Visão Geral da Documentação:
       - 📌 Introdução: visao-geral-da-documentacao/index.md
       - 🎯 Objetivos: visao-geral-da-documentacao/objetivo.md
