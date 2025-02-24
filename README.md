@@ -5,3 +5,5 @@ Bem-vindo à documentação oficial do Bazarium! Este repositório contém toda 
 📌 Sobre o Projeto
 
 O Bazarium é um marketplace digital projetado para conectar compradores e vendedores, oferecendo uma experiência segura e escalável para o comércio eletrônico. Esta documentação fornece informações detalhadas sobre os módulos do sistema, jornadas dos usuários e regras de negócio.
+
+https://tuyoshivinicius.github.io/bazarium-docs
