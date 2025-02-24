@@ -88,8 +88,6 @@ Este **Event Storming** documenta os comandos, eventos, agregados e regras de ne
 
 ## 📊 Diagrama
 
-Abaixo, um diagrama Mermaid para ilustrar a jornada:
-
 ```mermaid
 sequenceDiagram
     participant Usuario
@@ -111,5 +109,6 @@ sequenceDiagram
 
     Usuario->>UsuarioContexto: Acessar plataforma
     UsuarioContexto-->>Usuario: Acesso permitido com perfil definido
+```
 
 

@@ -32,9 +32,10 @@ plugins:
   - search  # Habilita busca no site
   - tags  # Permite categorização por tags
   - table-reader  # Melhor formatação de tabelas
+  - mermaid2
 
 extra_javascript:
-  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.4.0/mermaid.min.js
 
 # Configuração de navegação
 nav:    
@@ -59,7 +60,12 @@ nav:
       - 🚀 Jornadas do Usuário: jornadas/jornadas-do-usuario.md
       - 🔧 Jornadas por Funcionalidades: jornadas/jornadas-por-funcionalidade.md
   - 🚀 Event-Storming:
-      - 🔄 Criar Conta e Definir Perfil de Usuário: event-storming/criar-conta-e-definir-perfil-de-usuario.md    
+      - Gestão de Perfis de Usuário:
+        - 👤Jornada do Usuário: 
+          - Criar Conta e Definir Perfil de Usuário: event-storming/gestao-de-perfis-de-usuario/jornada-do-comprador/criar-conta-e-definir-perfil-de-usuario.md
+          - Alternar entre Perfis de Comprador e Vendedor: event-storming/gestao-de-perfis-de-usuario/jornada-do-comprador/alternar-entre-perfis-de-comprador-e-vendedor.md            
+          - Atualizar Informações Pessoais: event-storming/gestao-de-perfis-de-usuario/jornada-do-comprador/atualizar-informacoes-pessoais.md
+          - Excluir Conta Permanentemente: event-storming/gestao-de-perfis-de-usuario/jornada-do-comprador/excluir-conta-permanentemente.md
 
 # Configuração de Markdown
 markdown_extensions:
@@ -70,7 +76,12 @@ markdown_extensions:
   - admonition  # Permite caixas de aviso e destaque
   - pymdownx.highlight  # Destaque de código
   - pymdownx.inlinehilite  # Destaque de código inline
-  - pymdownx.superfences  # Melhor formatação de código e tabelas
+  - pymdownx.superfences:
+        # make exceptions to highlighting of code:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid_custom
   - pymdownx.details  # Suporte a seções expansíveis
   - pymdownx.snippets
   - pymdownx.emoji  # Suporte a emojis :smile:
@@ -79,4 +90,5 @@ markdown_extensions:
       custom_checkbox: true  # Correção de indentação
   - pymdownx.tabbed:
       alternate_style: true  # Usa estilo alternativo para abas
+      
 
