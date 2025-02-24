@@ -1,14 +1,14 @@
 # Nome do site
-site_name: Documentação do Marketplace
+site_name: Documentação Bazarium
 
 # Descrição do site (aparece nos metadados)
-site_description: Base de conhecimento do sistema Marketplace
+site_description: Base de conhecimento do sistema Bazarium
 
 # URL base do site (altere para seu GitHub Pages se necessário)
-site_url: https://seu-usuario.github.io/documentacao-marketplace/
+site_url: https://tuyoshivinicius.github.io/bazarium-docs/
 
 # Nome do autor
-site_author: Seu Nome
+site_author: Tuyoshi Vinicius
 
 # Tema do site
 theme:
@@ -34,14 +34,10 @@ plugins:
   - table-reader  # Melhor formatação de tabelas
 
 # Configuração de navegação
-nav:
-  - 📖 Introdução: index.md
-  - 🎯 Visão Geral: visao_geral.md
-  - 🏗️ Arquitetura do Sistema: arquitetura.md
-  - ✅ Requisitos do Sistema: requisitos.md
+nav:  
+  - 🎯 Visão Geral: visao-geral.md
+  - 🏗️ Arquitetura do Sistema: arquitetura.md  
   - ⚙️ Funcionalidades: funcionalidades.md
-  - 🔄 Modelo Conceitual e Fluxos: modelo_conceitual.md
-  - 📊 Relatórios e Análises: relatorios.md
 
 # Configuração de markdown
 markdown_extensions:
