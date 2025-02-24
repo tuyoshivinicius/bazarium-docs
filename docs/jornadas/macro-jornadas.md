@@ -1,7 +1,13 @@
 # Macro Jornadas do Bazarium
 
 ## Introdução
-As **macro jornadas** do **Bazarium** representam os principais fluxos de interação dos usuários dentro da plataforma. Esses fluxos são estruturados para garantir uma experiência eficiente e fluida, desde a navegação até a finalização de compras e interações pós-venda.
+As **Macro Jornadas** representam os **principais fluxos operacionais** dentro da plataforma, cobrindo a experiência completa do usuário de ponta a ponta. Elas englobam diferentes funcionalidades e personas, mostrando como os usuários interagem com o sistema em um **ciclo completo**, desde o primeiro acesso até ações pós-venda.
+
+## Para que servem?  
+- Proporcionam uma visão **estratégica e global** dos fluxos da plataforma.  
+- Ajudam a entender **como as funcionalidades se conectam** no uso real.  
+- Fundamentais para o **planejamento da experiência do usuário e otimização do sistema**.  
+
 
 ## 🛒 **Macro Jornada do Comprador**
 

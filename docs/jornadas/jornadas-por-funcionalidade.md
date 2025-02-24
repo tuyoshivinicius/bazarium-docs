@@ -1,7 +1,13 @@
 # Jornadas por Funcionalidade
 
 ## Introdução
-Esta página documenta as **jornadas de usuário** associadas a cada funcionalidade do **Bazarium**. As jornadas são organizadas de acordo com o perfil do usuário e os principais fluxos dentro da plataforma.
+As **Jornadas por Funcionalidades** detalham **fluxos específicos de interação** dentro de uma **funcionalidade** da plataforma. Elas mostram o **passo a passo técnico** de como determinada ação acontece no sistema, sendo fundamentais para o desenvolvimento e aprimoramento dos recursos.  
+
+## Para que servem?  
+- Estruturam o **desenvolvimento técnico de funcionalidades**.  
+- Garantem que todas as etapas de um fluxo estejam bem definidas.  
+- Fundamentais para a equipe de tecnologia e produto, auxiliando no **planejamento, implementação e testes de funcionalidades**.  
+
 
 ---
 

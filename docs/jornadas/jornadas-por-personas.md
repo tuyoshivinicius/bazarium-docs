@@ -1,7 +1,12 @@
 # Jornadas por Personas no Bazarium
 
 ## Introdução
-As jornadas dos usuários no **Bazarium** representam o fluxo de interações dentro da plataforma, garantindo que cada perfil de usuário tenha uma experiência eficiente e intuitiva. A seguir, são detalhadas as principais jornadas para cada persona.
+As **Jornadas por Personas** descrevem a **experiência de um tipo específico de usuário** dentro da plataforma, considerando suas **necessidades, comportamentos e objetivos**. Elas detalham como cada persona interage com as funcionalidades do sistema, destacando desafios e pontos de contato importantes.  
+
+## Para que servem?  
+- Direcionam o **desenvolvimento de funcionalidades centradas no usuário**.  
+- Facilitam a personalização da **experiência de diferentes perfis** na plataforma.  
+- Ajudam a equipe de design e produto a tomar **decisões baseadas nas necessidades reais dos usuários**.  
 
 ---
 
