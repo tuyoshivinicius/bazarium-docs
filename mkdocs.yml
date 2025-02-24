@@ -55,6 +55,8 @@ nav:
       - 🔄 Macro Jornadas: jornadas/macro-jornadas.md
       - 🚀 Jornadas do Usuário: jornadas/jornadas-do-usuario.md
       - 🔧 Jornadas por Funcionalidades: jornadas/jornadas-por-funcionalidade.md
+  - 🚀 Event-Storming:
+      - 🔄 Criar Conta e Definir Perfil de Usuário: event-storming/criar-conta-e-definir-perfil-de-usuario.md    
 
 # Configuração de markdown
 markdown_extensions:
