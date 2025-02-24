@@ -58,7 +58,7 @@ nav:
   - 🚀 Event-Storming:
       - 🔄 Criar Conta e Definir Perfil de Usuário: event-storming/criar-conta-e-definir-perfil-de-usuario.md    
 
-# Configuração de markdown
+# Configuração de Markdown
 markdown_extensions:
   - toc:
       permalink: true
@@ -72,9 +72,8 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.emoji  # Suporte a emojis :smile:
   - pymdownx.mark  # Permite destacar texto
-  - pymdownx.tasklist  # Listas de tarefas interativas
-      custom_checkbox: true
+  - pymdownx.tasklist:
+      custom_checkbox: true  # Correção de indentação
   - pymdownx.tabbed:
-      alternate_style: true
-  - attr_list
-  - md_in_html
+      alternate_style: true  # Usa estilo alternativo para abas
+
