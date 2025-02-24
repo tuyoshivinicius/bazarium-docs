@@ -33,6 +33,9 @@ plugins:
   - tags  # Permite categorização por tags
   - table-reader  # Melhor formatação de tabelas
 
+extra_javascript:
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
+
 # Configuração de navegação
 nav:    
   - Home: index.md  # Página inicial com redirecionamento
