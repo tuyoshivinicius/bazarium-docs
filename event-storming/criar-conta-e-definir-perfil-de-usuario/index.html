@@ -1190,27 +1190,27 @@
 <hr />
 <p>Este <strong>Event Storming</strong> documenta os comandos, eventos, agregados e regras de negócio relacionados ao fluxo de criação de conta e definição de perfil do usuário, deixando explícita a separação dos <strong>Bounded Contexts</strong> envolvidos.</p>
 <h2 id="diagrama">📊 Diagrama<a class="headerlink" href="#diagrama" title="Permanent link">&para;</a></h2>
-<p>Abaixo, um diagrama Mermaid para ilustrar a jornada</p>
-<p>```mermaid
+<p>Abaixo, um diagrama Mermaid para ilustrar a jornada:</p>
+<p>``` mermaid
 sequenceDiagram
-    participant Usuário
-    participant UsuárioContexto as Usuário
-    participant Notificação
-    participant EmailService</p>
-<div class="highlight"><pre><span></span><code>Usuário-&gt;&gt;UsuárioContexto: CriarConta(email, senha, nome)
-UsuárioContexto--&gt;&gt;Usuário: ContaCriada(usuarioId, email, status: Pendente)
-UsuárioContexto-&gt;&gt;Notificação: Solicitar envio de e-mail de confirmação
-Notificação-&gt;&gt;EmailService: Enviar e-mail de ativação
-EmailService--&gt;&gt;Usuário: Link de confirmação enviado
+    participant Usuario
+    participant UsuarioContexto as Usuário Contexto
+    participant Notificacao as Notificação
+    participant EmailService as Serviço de E-mail</p>
+<div class="highlight"><pre><span></span><code>Usuario-&gt;&gt;UsuarioContexto: CriarConta(email, senha, nome)
+UsuarioContexto--&gt;&gt;Usuario: ContaCriada(usuarioId, email, status: Pendente)
+UsuarioContexto-&gt;&gt;Notificacao: Solicitar envio de e-mail de confirmação
+Notificacao-&gt;&gt;EmailService: Enviar e-mail de ativação
+EmailService--&gt;&gt;Usuario: Link de confirmação enviado
 
-Usuário-&gt;&gt;Notificação: ConfirmarEmail(token)
-Notificação--&gt;&gt;UsuárioContexto: EmailConfirmado(usuarioId, status: Ativo)
+Usuario-&gt;&gt;Notificacao: ConfirmarEmail(token)
+Notificacao--&gt;&gt;UsuarioContexto: EmailConfirmado(usuarioId, status: Ativo)
 
-Usuário-&gt;&gt;UsuárioContexto: DefinirPerfilUsuario(tipoPerfil)
-UsuárioContexto--&gt;&gt;Usuário: PerfilDefinido(usuarioId, tipoPerfil)
+Usuario-&gt;&gt;UsuarioContexto: DefinirPerfilUsuario(tipoPerfil)
+UsuarioContexto--&gt;&gt;Usuario: PerfilDefinido(usuarioId, tipoPerfil)
 
-Usuário-&gt;&gt;UsuárioContexto: Acessar plataforma
-UsuárioContexto--&gt;&gt;Usuário: Acesso permitido com perfil definido
+Usuario-&gt;&gt;UsuarioContexto: Acessar plataforma
+UsuarioContexto--&gt;&gt;Usuario: Acesso permitido com perfil definido
 </code></pre></div>
 
 
