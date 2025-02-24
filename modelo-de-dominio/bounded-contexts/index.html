@@ -12,22 +12,28 @@
         <meta name="author" content="Tuyoshi Vinicius">
       
       
+        <link rel="canonical" href="https://tuyoshivinicius.github.io/bazarium-docs/modelo-de-dominio/bounded-contexts/">
       
       
+        <link rel="prev" href="../dominio/">
       
-      <link rel="icon" href="/bazarium-docs/assets/images/favicon.png">
+      
+        <link rel="next" href="../jornadas-do-usuario/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
     
     
       
-        <title>Documentação Bazarium</title>
+        <title>📌 Bounded Contexts - Documentação Bazarium</title>
       
     
     
-      <link rel="stylesheet" href="/bazarium-docs/assets/stylesheets/main.8608ea7d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8608ea7d.min.css">
       
         
-        <link rel="stylesheet" href="/bazarium-docs/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,7 +52,7 @@
       
     
     
-    <script>__md_scope=new URL("/bazarium-docs/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -69,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#bounded-contexts-do-bazarium" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -79,7 +90,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/bazarium-docs/." title="Documentação Bazarium" class="md-header__button md-logo" aria-label="Documentação Bazarium" data-md-component="logo">
+    <a href="../.." title="Documentação Bazarium" class="md-header__button md-logo" aria-label="Documentação Bazarium" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -99,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              📌 Bounded Contexts
             
           </span>
         </div>
@@ -170,7 +181,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/bazarium-docs/visao-geral-da-documentacao/" class="md-tabs__link">
+      <a href="../../visao-geral-da-documentacao/" class="md-tabs__link">
         
   
     
@@ -189,7 +200,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/bazarium-docs/visao-geral-da-documentacao/" class="md-tabs__link">
+        <a href="../../visao-geral-da-documentacao/" class="md-tabs__link">
           
   
   🎯 Visão Geral da Documentação
@@ -203,11 +214,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/bazarium-docs/modelo-de-dominio/dominio/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../dominio/" class="md-tabs__link">
           
   
   🏗️ Modelo de Domínio
@@ -225,7 +238,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/bazarium-docs/modulos-e-funcionalidades/funcionalidades/" class="md-tabs__link">
+        <a href="../../modulos-e-funcionalidades/funcionalidades/" class="md-tabs__link">
           
   
   ⚙️ Módulos e Funcionalidades
@@ -260,7 +273,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/bazarium-docs/." title="Documentação Bazarium" class="md-nav__button md-logo" aria-label="Documentação Bazarium" data-md-component="logo">
+    <a href="../.." title="Documentação Bazarium" class="md-nav__button md-logo" aria-label="Documentação Bazarium" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -278,7 +291,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/bazarium-docs/visao-geral-da-documentacao/" class="md-nav__link">
+      <a href="../../visao-geral-da-documentacao/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -340,7 +353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/bazarium-docs/visao-geral-da-documentacao/" class="md-nav__link">
+      <a href="../../visao-geral-da-documentacao/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -362,7 +375,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/bazarium-docs/visao-geral-da-documentacao/objetivo/" class="md-nav__link">
+      <a href="../../visao-geral-da-documentacao/objetivo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -384,7 +397,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/bazarium-docs/visao-geral-da-documentacao/publico-alvo/" class="md-nav__link">
+      <a href="../../visao-geral-da-documentacao/publico-alvo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -406,7 +419,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/bazarium-docs/visao-geral-da-documentacao/sobre-o-projeto/" class="md-nav__link">
+      <a href="../../visao-geral-da-documentacao/sobre-o-projeto/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -432,25 +445,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -462,7 +478,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             🏗️ Modelo de Domínio
@@ -476,7 +492,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/bazarium-docs/modelo-de-dominio/dominio/" class="md-nav__link">
+      <a href="../dominio/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -495,10 +511,31 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/bazarium-docs/modelo-de-dominio/bounded-contexts/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    📌 Bounded Contexts
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -508,6 +545,140 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introdução
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contextos-delimitados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contextos Delimitados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Contextos Delimitados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-contexto-de-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      1️⃣ Contexto de Usuário
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-contexto-de-catalogo" class="md-nav__link">
+    <span class="md-ellipsis">
+      2️⃣ Contexto de Catálogo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-contexto-de-venda" class="md-nav__link">
+    <span class="md-ellipsis">
+      3️⃣ Contexto de Venda
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-contexto-de-pagamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      4️⃣ Contexto de Pagamento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-contexto-de-entrega" class="md-nav__link">
+    <span class="md-ellipsis">
+      5️⃣ Contexto de Entrega
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-contexto-de-avaliacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      6️⃣ Contexto de Avaliação
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-contexto-de-notificacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      7️⃣ Contexto de Notificação
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-contexto-de-relatorios" class="md-nav__link">
+    <span class="md-ellipsis">
+      8️⃣ Contexto de Relatórios
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#beneficios-da-segmentacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Benefícios da Segmentação
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusão
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -520,7 +691,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/bazarium-docs/modelo-de-dominio/jornadas-do-usuario/" class="md-nav__link">
+      <a href="../jornadas-do-usuario/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -542,7 +713,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/bazarium-docs/modelo-de-dominio/personas/" class="md-nav__link">
+      <a href="../personas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -612,7 +783,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/bazarium-docs/modulos-e-funcionalidades/funcionalidades/" class="md-nav__link">
+      <a href="../../modulos-e-funcionalidades/funcionalidades/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -634,7 +805,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/bazarium-docs/modulos-e-funcionalidades/macro-jornadas/" class="md-nav__link">
+      <a href="../../modulos-e-funcionalidades/macro-jornadas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -656,7 +827,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/bazarium-docs/modulos-e-funcionalidades/requisitos/" class="md-nav__link">
+      <a href="../../modulos-e-funcionalidades/requisitos/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -690,8 +861,84 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+
+<h1 id="bounded-contexts-do-bazarium">Bounded Contexts do Bazarium<a class="headerlink" href="#bounded-contexts-do-bazarium" title="Permanent link">&para;</a></h1>
+<h2 id="introducao">Introdução<a class="headerlink" href="#introducao" title="Permanent link">&para;</a></h2>
+<p>O <strong>Bazarium</strong> é um marketplace digital que adota uma arquitetura baseada em <strong>Bounded Contexts</strong> para organizar e modularizar suas funcionalidades. Essa segmentação permite que diferentes partes do sistema operem de forma independente, facilitando a escalabilidade, manutenção e evolução da plataforma.</p>
+<h2 id="contextos-delimitados">Contextos Delimitados<a class="headerlink" href="#contextos-delimitados" title="Permanent link">&para;</a></h2>
+<p>A plataforma é segmentada em diferentes contextos funcionais, cada um com responsabilidades bem definidas:</p>
+<h3 id="1-contexto-de-usuario">1️⃣ <strong>Contexto de Usuário</strong><a class="headerlink" href="#1-contexto-de-usuario" title="Permanent link">&para;</a></h3>
+<p>Responsável pelo gerenciamento de identidade e acesso dos usuários.
+- <strong>Principais funcionalidades</strong>:
+  - Cadastro e autenticação.
+  - Gerenciamento de perfis (comprador/vendedor/admin).
+  - Segurança e autenticação multifator (MFA).</p>
+<h3 id="2-contexto-de-catalogo">2️⃣ <strong>Contexto de Catálogo</strong><a class="headerlink" href="#2-contexto-de-catalogo" title="Permanent link">&para;</a></h3>
+<p>Gerencia os produtos disponíveis no <strong>Bazarium</strong>.
+- <strong>Principais funcionalidades</strong>:
+  - Cadastro, edição e exclusão de produtos.
+  - Organização em categorias e gerenciamento de estoque.
+  - Regras de visibilidade e precificação dinâmica.</p>
+<h3 id="3-contexto-de-venda">3️⃣ <strong>Contexto de Venda</strong><a class="headerlink" href="#3-contexto-de-venda" title="Permanent link">&para;</a></h3>
+<p>Abrange todo o fluxo de compra até a geração do pedido.
+- <strong>Principais funcionalidades</strong>:
+  - Adição de produtos ao carrinho.
+  - Processamento de checkout e cálculo de totais.
+  - Criação e rastreamento de pedidos.</p>
+<h3 id="4-contexto-de-pagamento">4️⃣ <strong>Contexto de Pagamento</strong><a class="headerlink" href="#4-contexto-de-pagamento" title="Permanent link">&para;</a></h3>
+<p>Responsável pelo processamento financeiro das transações.
+- <strong>Principais funcionalidades</strong>:
+  - Integração com gateways de pagamento.
+  - Processamento de autorizações e recusas.
+  - Emissão de notas fiscais e controle de reembolsos.</p>
+<h3 id="5-contexto-de-entrega">5️⃣ <strong>Contexto de Entrega</strong><a class="headerlink" href="#5-contexto-de-entrega" title="Permanent link">&para;</a></h3>
+<p>Gerencia a logística e rastreamento dos pedidos.
+- <strong>Principais funcionalidades</strong>:
+  - Cálculo de frete e estimativa de prazos.
+  - Geração de códigos de rastreamento.
+  - Atualização automática do status de entrega.</p>
+<h3 id="6-contexto-de-avaliacao">6️⃣ <strong>Contexto de Avaliação</strong><a class="headerlink" href="#6-contexto-de-avaliacao" title="Permanent link">&para;</a></h3>
+<p>Controla o sistema de reputação dos produtos e vendedores.
+- <strong>Principais funcionalidades</strong>:
+  - Registro de avaliações e feedbacks.
+  - Cálculo da reputação do vendedor.
+  - Moderação de avaliações inadequadas.</p>
+<h3 id="7-contexto-de-notificacao">7️⃣ <strong>Contexto de Notificação</strong><a class="headerlink" href="#7-contexto-de-notificacao" title="Permanent link">&para;</a></h3>
+<p>Orquestra a comunicação entre a plataforma e os usuários.
+- <strong>Principais funcionalidades</strong>:
+  - Envio de notificações transacionais.
+  - Comunicação entre compradores e vendedores.
+  - Divulgação de promoções e alertas personalizados.</p>
+<h3 id="8-contexto-de-relatorios">8️⃣ <strong>Contexto de Relatórios</strong><a class="headerlink" href="#8-contexto-de-relatorios" title="Permanent link">&para;</a></h3>
+<p>Fornece insights e métricas operacionais para vendedores e administradores.
+- <strong>Principais funcionalidades</strong>:
+  - Geração de relatórios financeiros.
+  - Monitoramento de desempenho de vendas.
+  - Indicadores de experiência do usuário.</p>
+<h2 id="beneficios-da-segmentacao">Benefícios da Segmentação<a class="headerlink" href="#beneficios-da-segmentacao" title="Permanent link">&para;</a></h2>
+<p>A adoção de <strong>Bounded Contexts</strong> no <strong>Bazarium</strong> permite:
+- <strong>Modularidade</strong>: Cada contexto pode evoluir independentemente.
+- <strong>Escalabilidade</strong>: Possibilidade de distribuir serviços para melhor performance.
+- <strong>Manutenção facilitada</strong>: Isolamento de responsabilidades reduzindo impacto de mudanças.
+- <strong>Maior segurança</strong>: Controle granular sobre permissões e acesso aos dados.</p>
+<h2 id="conclusao">Conclusão<a class="headerlink" href="#conclusao" title="Permanent link">&para;</a></h2>
+<p>A segmentação do <strong>Bazarium</strong> em diferentes contextos delimitados permite uma arquitetura organizada e escalável, garantindo melhor desempenho e facilidade de manutenção. Essa abordagem facilita a evolução contínua da plataforma, garantindo que cada funcionalidade opere de forma independente e otimizada.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -725,10 +972,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/bazarium-docs/", "features": ["navigation.instant", "navigation.tabs", "navigation.expand", "toc.integrate", "search.suggest", "search.highlight"], "search": "/bazarium-docs/assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.expand", "toc.integrate", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="/bazarium-docs/assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../../assets/javascripts/bundle.f1b6f286.min.js"></script>
       
     
   </body>

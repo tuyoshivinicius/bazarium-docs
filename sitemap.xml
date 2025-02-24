@@ -1,15 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://tuyoshivinicius.github.io/bazarium-docs/arquitetura/</loc>
+         <loc>https://tuyoshivinicius.github.io/bazarium-docs/modelo-de-dominio/bounded-contexts/</loc>
          <lastmod>2025-02-24</lastmod>
     </url>
     <url>
-         <loc>https://tuyoshivinicius.github.io/bazarium-docs/funcionalidades/</loc>
+         <loc>https://tuyoshivinicius.github.io/bazarium-docs/modelo-de-dominio/dominio/</loc>
          <lastmod>2025-02-24</lastmod>
     </url>
     <url>
-         <loc>https://tuyoshivinicius.github.io/bazarium-docs/visao-geral/</loc>
+         <loc>https://tuyoshivinicius.github.io/bazarium-docs/modelo-de-dominio/jornadas-do-usuario/</loc>
+         <lastmod>2025-02-24</lastmod>
+    </url>
+    <url>
+         <loc>https://tuyoshivinicius.github.io/bazarium-docs/modelo-de-dominio/personas/</loc>
+         <lastmod>2025-02-24</lastmod>
+    </url>
+    <url>
+         <loc>https://tuyoshivinicius.github.io/bazarium-docs/modulos-e-funcionalidades/funcionalidades/</loc>
+         <lastmod>2025-02-24</lastmod>
+    </url>
+    <url>
+         <loc>https://tuyoshivinicius.github.io/bazarium-docs/modulos-e-funcionalidades/macro-jornadas/</loc>
+         <lastmod>2025-02-24</lastmod>
+    </url>
+    <url>
+         <loc>https://tuyoshivinicius.github.io/bazarium-docs/modulos-e-funcionalidades/requisitos/</loc>
+         <lastmod>2025-02-24</lastmod>
+    </url>
+    <url>
+         <loc>https://tuyoshivinicius.github.io/bazarium-docs/visao-geral-da-documentacao/</loc>
+         <lastmod>2025-02-24</lastmod>
+    </url>
+    <url>
+         <loc>https://tuyoshivinicius.github.io/bazarium-docs/visao-geral-da-documentacao/objetivo/</loc>
+         <lastmod>2025-02-24</lastmod>
+    </url>
+    <url>
+         <loc>https://tuyoshivinicius.github.io/bazarium-docs/visao-geral-da-documentacao/publico-alvo/</loc>
+         <lastmod>2025-02-24</lastmod>
+    </url>
+    <url>
+         <loc>https://tuyoshivinicius.github.io/bazarium-docs/visao-geral-da-documentacao/sobre-o-projeto/</loc>
          <lastmod>2025-02-24</lastmod>
     </url>
 </urlset>
