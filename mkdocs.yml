@@ -44,14 +44,17 @@ nav:
 
   - 🏗️ Modelo de Domínio:
       - 🌎 Domínio: modelo-de-dominio/dominio.md
-      - 📌 Bounded Contexts: modelo-de-dominio/bounded-contexts.md
-      - 🚀 Jornadas do Usuário: modelo-de-dominio/jornadas-do-usuario.md
       - 👤 Personas: modelo-de-dominio/personas.md
+      - 📌 Bounded Contexts: modelo-de-dominio/bounded-contexts.md          
 
   - ⚙️ Módulos e Funcionalidades:
-      - 🔧 Funcionalidades: modulos-e-funcionalidades/funcionalidades.md
-      - 🔄 Macro Jornadas: modulos-e-funcionalidades/macro-jornadas.md
       - 📋 Requisitos: modulos-e-funcionalidades/requisitos.md
+      - 🔧 Funcionalidades: modulos-e-funcionalidades/funcionalidades.md    
+
+  - 🚀 Jornadas:
+      - 🔄 Macro Jornadas: modulos-e-funcionalidades/macro-jornadas.md
+      - 🚀 Jornadas do Usuário: modelo-de-dominio/jornadas-do-usuario.md
+      - 🔧 Jornadas por Funcionalidades: modelo-de-dominio/jornadas-por-funcionalidade.md
 
 # Configuração de markdown
 markdown_extensions:
