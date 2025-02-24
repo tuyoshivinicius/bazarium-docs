@@ -88,27 +88,27 @@ Este **Event Storming** documenta os comandos, eventos, agregados e regras de ne
 
 ## 📊 Diagrama
 
-Abaixo, um diagrama Mermaid para ilustrar a jornada
+Abaixo, um diagrama Mermaid para ilustrar a jornada:
 
-```mermaid
+``` mermaid
 sequenceDiagram
-    participant Usuário
-    participant UsuárioContexto as Usuário
-    participant Notificação
-    participant EmailService
+    participant Usuario
+    participant UsuarioContexto as Usuário Contexto
+    participant Notificacao as Notificação
+    participant EmailService as Serviço de E-mail
 
-    Usuário->>UsuárioContexto: CriarConta(email, senha, nome)
-    UsuárioContexto-->>Usuário: ContaCriada(usuarioId, email, status: Pendente)
-    UsuárioContexto->>Notificação: Solicitar envio de e-mail de confirmação
-    Notificação->>EmailService: Enviar e-mail de ativação
-    EmailService-->>Usuário: Link de confirmação enviado
+    Usuario->>UsuarioContexto: CriarConta(email, senha, nome)
+    UsuarioContexto-->>Usuario: ContaCriada(usuarioId, email, status: Pendente)
+    UsuarioContexto->>Notificacao: Solicitar envio de e-mail de confirmação
+    Notificacao->>EmailService: Enviar e-mail de ativação
+    EmailService-->>Usuario: Link de confirmação enviado
 
-    Usuário->>Notificação: ConfirmarEmail(token)
-    Notificação-->>UsuárioContexto: EmailConfirmado(usuarioId, status: Ativo)
+    Usuario->>Notificacao: ConfirmarEmail(token)
+    Notificacao-->>UsuarioContexto: EmailConfirmado(usuarioId, status: Ativo)
 
-    Usuário->>UsuárioContexto: DefinirPerfilUsuario(tipoPerfil)
-    UsuárioContexto-->>Usuário: PerfilDefinido(usuarioId, tipoPerfil)
+    Usuario->>UsuarioContexto: DefinirPerfilUsuario(tipoPerfil)
+    UsuarioContexto-->>Usuario: PerfilDefinido(usuarioId, tipoPerfil)
 
-    Usuário->>UsuárioContexto: Acessar plataforma
-    UsuárioContexto-->>Usuário: Acesso permitido com perfil definido
+    Usuario->>UsuarioContexto: Acessar plataforma
+    UsuarioContexto-->>Usuario: Acesso permitido com perfil definido
 
