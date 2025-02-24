@@ -64,8 +64,15 @@ markdown_extensions:
   - md_in_html  # Permite HTML dentro do Markdown
   - admonition  # Permite caixas de aviso e destaque
   - pymdownx.highlight  # Destaque de código
+  - pymdownx.inlinehilite  # Destaque de código inline
   - pymdownx.superfences  # Melhor formatação de código e tabelas
   - pymdownx.details  # Suporte a seções expansíveis
+  - pymdownx.snippets
   - pymdownx.emoji  # Suporte a emojis :smile:
   - pymdownx.mark  # Permite destacar texto
   - pymdownx.tasklist  # Listas de tarefas interativas
+      custom_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
