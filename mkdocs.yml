@@ -35,9 +35,23 @@ plugins:
 
 # Configuração de navegação
 nav:  
-  - 🎯 Visão Geral: visao-geral.md
-  - 🏗️ Arquitetura do Sistema: arquitetura.md  
-  - ⚙️ Funcionalidades: funcionalidades.md
+  - Home: visao-geral-da-documentacao/index.md  # Define o index da documentação
+  - 🎯 Visão Geral da Documentação:
+      - 📌 Introdução: visao-geral-da-documentacao/index.md
+      - 🎯 Objetivos: visao-geral-da-documentacao/objetivo.md
+      - 👥 Público-Alvo: visao-geral-da-documentacao/publico-alvo.md
+      - 📖 Sobre o Projeto: visao-geral-da-documentacao/sobre-o-projeto.md
+
+  - 🏗️ Modelo de Domínio:
+      - 🌎 Domínio: modelo-de-dominio/dominio.md
+      - 📌 Bounded Contexts: modelo-de-dominio/bounded-contexts.md
+      - 🚀 Jornadas do Usuário: modelo-de-dominio/jornadas-do-usuario.md
+      - 👤 Personas: modelo-de-dominio/personas.md
+
+  - ⚙️ Módulos e Funcionalidades:
+      - 🔧 Funcionalidades: modulos-e-funcionalidades/funcionalidades.md
+      - 🔄 Macro Jornadas: modulos-e-funcionalidades/macro-jornadas.md
+      - 📋 Requisitos: modulos-e-funcionalidades/requisitos.md
 
 # Configuração de markdown
 markdown_extensions:
