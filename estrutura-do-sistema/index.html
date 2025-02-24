@@ -1,0 +1,847 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Base de conhecimento do sistema Marketplace">
+      
+      
+        <meta name="author" content="Seu Nome">
+      
+      
+        <link rel="canonical" href="https://seu-usuario.github.io/documentacao-marketplace/estrutura-do-sistema/">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
+    
+    
+      
+        <title>Domínio do Bazarium - Documentação do Marketplace</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="pink">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#dominio-do-bazarium" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Documentação do Marketplace" class="md-header__button md-logo" aria-label="Documentação do Marketplace" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentação do Marketplace
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Domínio do Bazarium
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../index.md" class="md-tabs__link">
+        
+  
+    
+  
+  📖 Introdução
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../visao_geral.md" class="md-tabs__link">
+        
+  
+    
+  
+  🎯 Visão Geral
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../arquitetura.md" class="md-tabs__link">
+        
+  
+    
+  
+  🏗️ Arquitetura do Sistema
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../requisitos.md" class="md-tabs__link">
+        
+  
+    
+  
+  ✅ Requisitos do Sistema
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../funcionalidades/" class="md-tabs__link">
+        
+  
+    
+  
+  ⚙️ Funcionalidades
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../modelo_conceitual.md" class="md-tabs__link">
+        
+  
+    
+  
+  🔄 Modelo Conceitual e Fluxos
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../relatorios.md" class="md-tabs__link">
+        
+  
+    
+  
+  📊 Relatórios e Análises
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Documentação do Marketplace" class="md-nav__button md-logo" aria-label="Documentação do Marketplace" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Documentação do Marketplace
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📖 Introdução
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visao_geral.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🎯 Visão Geral
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../arquitetura.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🏗️ Arquitetura do Sistema
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../requisitos.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ✅ Requisitos do Sistema
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../funcionalidades/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ⚙️ Funcionalidades
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modelo_conceitual.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🔄 Modelo Conceitual e Fluxos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../relatorios.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📊 Relatórios e Análises
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="dominio-do-bazarium">Domínio do Bazarium<a class="headerlink" href="#dominio-do-bazarium" title="Permanent link">&para;</a></h1>
+<h2 id="introducao">Introdução<a class="headerlink" href="#introducao" title="Permanent link">&para;</a></h2>
+<p>O <strong>Bazarium</strong> é um marketplace digital estruturado em domínios distintos para garantir modularidade, escalabilidade e manutenibilidade do sistema. Cada domínio representa um conjunto de funcionalidades coesas e bem definidas dentro do ecossistema da plataforma.</p>
+<h2 id="conceitos-principais">Conceitos Principais<a class="headerlink" href="#conceitos-principais" title="Permanent link">&para;</a></h2>
+<p>O sistema é segmentado em conceitos fundamentais que organizam sua lógica de negócio:</p>
+<h3 id="1-usuario">1️⃣ Usuário<a class="headerlink" href="#1-usuario" title="Permanent link">&para;</a></h3>
+<p>Representa qualquer pessoa que interage com o sistema, seja como comprador, vendedor ou administrador.
+- <strong>Atributos principais</strong>: ID, nome, e-mail, telefone, tipo de conta (comprador/vendedor/admin), data de cadastro.
+- <strong>Regras de negócio</strong>:
+  - Um usuário pode ter múltiplos endereços cadastrados.
+  - A autenticação é obrigatória para acessar funcionalidades críticas.
+  - Usuários podem alternar entre os papéis de comprador e vendedor.</p>
+<h3 id="2-produto">2️⃣ Produto<a class="headerlink" href="#2-produto" title="Permanent link">&para;</a></h3>
+<p>Entidade que representa os itens disponíveis para compra na plataforma.
+- <strong>Atributos principais</strong>: ID, nome, descrição, preço, estoque, categoria, imagens.
+- <strong>Regras de negócio</strong>:
+  - Apenas vendedores podem cadastrar e gerenciar produtos.
+  - Cada produto pertence a uma única categoria.
+  - O estoque deve ser atualizado após cada venda.</p>
+<h3 id="3-pedido">3️⃣ Pedido<a class="headerlink" href="#3-pedido" title="Permanent link">&para;</a></h3>
+<p>Refere-se a uma transação iniciada por um comprador ao concluir uma compra.
+- <strong>Atributos principais</strong>: ID, comprador, lista de produtos, valor total, status (pendente, pago, enviado, entregue, cancelado).
+- <strong>Regras de negócio</strong>:
+  - Um pedido só pode ser criado se todos os produtos estiverem disponíveis em estoque.
+  - O status do pedido deve ser atualizado conforme o fluxo de processamento.
+  - Pedidos podem ser cancelados antes da confirmação de envio.</p>
+<h3 id="4-pagamento">4️⃣ Pagamento<a class="headerlink" href="#4-pagamento" title="Permanent link">&para;</a></h3>
+<p>Gerencia o processamento financeiro dentro do <strong>Bazarium</strong>.
+- <strong>Atributos principais</strong>: ID da transação, pedido associado, método de pagamento, status da transação (autorizado, recusado, estornado).
+- <strong>Regras de negócio</strong>:
+  - Somente pedidos com pagamento autorizado são considerados válidos.
+  - Pagamentos podem ser reembolsados conforme a política de cancelamento.
+  - Integração com gateways de pagamento externos para processamento seguro.</p>
+<h3 id="5-entrega">5️⃣ Entrega<a class="headerlink" href="#5-entrega" title="Permanent link">&para;</a></h3>
+<p>Controle do fluxo logístico dos pedidos realizados na plataforma.
+- <strong>Atributos principais</strong>: ID do envio, pedido associado, código de rastreamento, transportadora, status de entrega (processando, enviado, entregue).
+- <strong>Regras de negócio</strong>:
+  - Apenas pedidos pagos podem gerar um envio.
+  - O código de rastreamento deve ser gerado após a confirmação de envio.
+  - O status deve ser atualizado conforme o andamento do transporte.</p>
+<h3 id="6-avaliacao">6️⃣ Avaliação<a class="headerlink" href="#6-avaliacao" title="Permanent link">&para;</a></h3>
+<p>Módulo responsável pelo sistema de reputação dos produtos e vendedores.
+- <strong>Atributos principais</strong>: ID, usuário avaliador, produto/vendedor, nota (1-5), comentário, data.
+- <strong>Regras de negócio</strong>:
+  - Somente compradores que concluíram uma compra podem avaliar um produto.
+  - Vendedores podem responder avaliações para fornecer suporte.
+  - Avaliações são públicas e influenciam a reputação do vendedor.</p>
+<h2 id="conclusao">Conclusão<a class="headerlink" href="#conclusao" title="Permanent link">&para;</a></h2>
+<p>O domínio do <strong>Bazarium</strong> é estruturado para garantir um fluxo eficiente de compra e venda dentro da plataforma. A segmentação em entidades bem definidas permite uma melhor organização do sistema, favorecendo a escalabilidade e a manutenção contínua.</p>
+<h1 id="bounded-contexts-do-bazarium">Bounded Contexts do Bazarium<a class="headerlink" href="#bounded-contexts-do-bazarium" title="Permanent link">&para;</a></h1>
+<h2 id="introducao_1">Introdução<a class="headerlink" href="#introducao_1" title="Permanent link">&para;</a></h2>
+<p>O <strong>Bazarium</strong> é um marketplace digital que adota uma arquitetura baseada em <strong>Bounded Contexts</strong> para organizar e modularizar suas funcionalidades. Essa segmentação permite que diferentes partes do sistema operem de forma independente, facilitando a escalabilidade, manutenção e evolução da plataforma.</p>
+<h2 id="contextos-delimitados">Contextos Delimitados<a class="headerlink" href="#contextos-delimitados" title="Permanent link">&para;</a></h2>
+<p>A plataforma é segmentada em diferentes contextos funcionais, cada um com responsabilidades bem definidas:</p>
+<h3 id="1-contexto-de-usuario">1️⃣ <strong>Contexto de Usuário</strong><a class="headerlink" href="#1-contexto-de-usuario" title="Permanent link">&para;</a></h3>
+<p>Responsável pelo gerenciamento de identidade e acesso dos usuários.
+- <strong>Principais funcionalidades</strong>:
+  - Cadastro e autenticação.
+  - Gerenciamento de perfis (comprador/vendedor/admin).
+  - Segurança e autenticação multifator (MFA).</p>
+<h3 id="2-contexto-de-catalogo">2️⃣ <strong>Contexto de Catálogo</strong><a class="headerlink" href="#2-contexto-de-catalogo" title="Permanent link">&para;</a></h3>
+<p>Gerencia os produtos disponíveis no <strong>Bazarium</strong>.
+- <strong>Principais funcionalidades</strong>:
+  - Cadastro, edição e exclusão de produtos.
+  - Organização em categorias e gerenciamento de estoque.
+  - Regras de visibilidade e precificação dinâmica.</p>
+<h3 id="3-contexto-de-venda">3️⃣ <strong>Contexto de Venda</strong><a class="headerlink" href="#3-contexto-de-venda" title="Permanent link">&para;</a></h3>
+<p>Abrange todo o fluxo de compra até a geração do pedido.
+- <strong>Principais funcionalidades</strong>:
+  - Adição de produtos ao carrinho.
+  - Processamento de checkout e cálculo de totais.
+  - Criação e rastreamento de pedidos.</p>
+<h3 id="4-contexto-de-pagamento">4️⃣ <strong>Contexto de Pagamento</strong><a class="headerlink" href="#4-contexto-de-pagamento" title="Permanent link">&para;</a></h3>
+<p>Responsável pelo processamento financeiro das transações.
+- <strong>Principais funcionalidades</strong>:
+  - Integração com gateways de pagamento.
+  - Processamento de autorizações e recusas.
+  - Emissão de notas fiscais e controle de reembolsos.</p>
+<h3 id="5-contexto-de-entrega">5️⃣ <strong>Contexto de Entrega</strong><a class="headerlink" href="#5-contexto-de-entrega" title="Permanent link">&para;</a></h3>
+<p>Gerencia a logística e rastreamento dos pedidos.
+- <strong>Principais funcionalidades</strong>:
+  - Cálculo de frete e estimativa de prazos.
+  - Geração de códigos de rastreamento.
+  - Atualização automática do status de entrega.</p>
+<h3 id="6-contexto-de-avaliacao">6️⃣ <strong>Contexto de Avaliação</strong><a class="headerlink" href="#6-contexto-de-avaliacao" title="Permanent link">&para;</a></h3>
+<p>Controla o sistema de reputação dos produtos e vendedores.
+- <strong>Principais funcionalidades</strong>:
+  - Registro de avaliações e feedbacks.
+  - Cálculo da reputação do vendedor.
+  - Moderação de avaliações inadequadas.</p>
+<h3 id="7-contexto-de-notificacao">7️⃣ <strong>Contexto de Notificação</strong><a class="headerlink" href="#7-contexto-de-notificacao" title="Permanent link">&para;</a></h3>
+<p>Orquestra a comunicação entre a plataforma e os usuários.
+- <strong>Principais funcionalidades</strong>:
+  - Envio de notificações transacionais.
+  - Comunicação entre compradores e vendedores.
+  - Divulgação de promoções e alertas personalizados.</p>
+<h3 id="8-contexto-de-relatorios">8️⃣ <strong>Contexto de Relatórios</strong><a class="headerlink" href="#8-contexto-de-relatorios" title="Permanent link">&para;</a></h3>
+<p>Fornece insights e métricas operacionais para vendedores e administradores.
+- <strong>Principais funcionalidades</strong>:
+  - Geração de relatórios financeiros.
+  - Monitoramento de desempenho de vendas.
+  - Indicadores de experiência do usuário.</p>
+<h2 id="beneficios-da-segmentacao">Benefícios da Segmentação<a class="headerlink" href="#beneficios-da-segmentacao" title="Permanent link">&para;</a></h2>
+<p>A adoção de <strong>Bounded Contexts</strong> no <strong>Bazarium</strong> permite:
+- <strong>Modularidade</strong>: Cada contexto pode evoluir independentemente.
+- <strong>Escalabilidade</strong>: Possibilidade de distribuir serviços para melhor performance.
+- <strong>Manutenção facilitada</strong>: Isolamento de responsabilidades reduzindo impacto de mudanças.
+- <strong>Maior segurança</strong>: Controle granular sobre permissões e acesso aos dados.</p>
+<h2 id="conclusao_1">Conclusão<a class="headerlink" href="#conclusao_1" title="Permanent link">&para;</a></h2>
+<p>A segmentação do <strong>Bazarium</strong> em diferentes contextos delimitados permite uma arquitetura organizada e escalável, garantindo melhor desempenho e facilidade de manutenção. Essa abordagem facilita a evolução contínua da plataforma, garantindo que cada funcionalidade opere de forma independente e otimizada.</p>
+<h1 id="personas-do-bazarium">Personas do Bazarium<a class="headerlink" href="#personas-do-bazarium" title="Permanent link">&para;</a></h1>
+<h2 id="introducao_2">Introdução<a class="headerlink" href="#introducao_2" title="Permanent link">&para;</a></h2>
+<p>O <strong>Bazarium</strong> atende a diferentes perfis de usuários, cada um com necessidades específicas dentro do ecossistema do marketplace. A definição das personas auxilia no desenvolvimento de funcionalidades otimizadas para cada tipo de usuário.</p>
+<h2 id="personas-principais">Personas Principais<a class="headerlink" href="#personas-principais" title="Permanent link">&para;</a></h2>
+<p>A seguir, são descritos os principais perfis de usuários do <strong>Bazarium</strong>:</p>
+<h3 id="1-comprador">1️⃣ <strong>Comprador 🛒</strong><a class="headerlink" href="#1-comprador" title="Permanent link">&para;</a></h3>
+<p>Usuário interessado em adquirir produtos na plataforma.</p>
+<p>🔹 <strong>Objetivos</strong>:
+- Encontrar e comprar produtos de forma rápida e segura.
+- Comparar preços e avaliações antes da compra.
+- Acompanhar pedidos e receber notificações de entrega.
+- Solicitar reembolso ou devolução, se necessário.</p>
+<p>🔹 <strong>Principais necessidades</strong>:
+- Interface intuitiva para busca e filtros avançados.
+- Métodos de pagamento variados e seguros.
+- Rastreamento detalhado dos pedidos.
+- Sistema de avaliação de vendedores e produtos.</p>
+<h3 id="2-vendedor">2️⃣ <strong>Vendedor 🏪</strong><a class="headerlink" href="#2-vendedor" title="Permanent link">&para;</a></h3>
+<p>Usuário que cadastra e gerencia produtos para venda na plataforma.</p>
+<p>🔹 <strong>Objetivos</strong>:
+- Cadastrar e gerenciar produtos com descrição, imagens e preços.
+- Monitorar estoque e definir promoções.
+- Processar pedidos e gerenciar envios.
+- Receber avaliações e interagir com clientes.</p>
+<p>🔹 <strong>Principais necessidades</strong>:
+- Dashboard para monitoramento de vendas e métricas.
+- Ferramentas para gestão de promoções e cupons.
+- Opções de integração com sistemas de logística.
+- Relatórios financeiros para acompanhamento de faturamento.</p>
+<h3 id="3-administrador-do-marketplace">3️⃣ <strong>Administrador do Marketplace 🛠️</strong><a class="headerlink" href="#3-administrador-do-marketplace" title="Permanent link">&para;</a></h3>
+<p>Usuário responsável por gerenciar a plataforma e garantir seu funcionamento adequado.</p>
+<p>🔹 <strong>Objetivos</strong>:
+- Supervisionar transações e operações na plataforma.
+- Garantir conformidade com regulamentações e políticas da empresa.
+- Monitorar e mitigar possíveis fraudes ou disputas.
+- Gerenciar conteúdos e campanhas promocionais.</p>
+<p>🔹 <strong>Principais necessidades</strong>:
+- Painéis de monitoramento de transações e métricas de desempenho.
+- Ferramentas para análise de segurança e detecção de fraudes.
+- Interface para moderação de avaliações e interações entre usuários.
+- Controle sobre campanhas de marketing e notificações para usuários.</p>
+<h3 id="4-gateway-de-pagamento-sistema-externo">4️⃣ <strong>Gateway de Pagamento 💳 (Sistema Externo)</strong><a class="headerlink" href="#4-gateway-de-pagamento-sistema-externo" title="Permanent link">&para;</a></h3>
+<p>Serviço responsável por processar pagamentos e transações financeiras.</p>
+<p>🔹 <strong>Objetivos</strong>:
+- Autorizar e processar pagamentos de forma segura.
+- Emitir notas fiscais e gerenciar estornos.
+- Garantir a conformidade das transações financeiras.</p>
+<p>🔹 <strong>Principais necessidades</strong>:
+- Integração com métodos de pagamento (cartão, boleto, PIX, etc.).
+- Monitoramento antifraude e validação de identidade.
+- Gestão de reembolsos e disputas de pagamento.</p>
+<h3 id="5-transportadoralogistica-sistema-externo-ou-parceiro">5️⃣ <strong>Transportadora/Logística 🚚 (Sistema Externo ou Parceiro)</strong><a class="headerlink" href="#5-transportadoralogistica-sistema-externo-ou-parceiro" title="Permanent link">&para;</a></h3>
+<p>Responsável por realizar a entrega dos pedidos aos compradores.</p>
+<p>🔹 <strong>Objetivos</strong>:
+- Definir custos e prazos de envio.
+- Gerar código de rastreamento e atualizar status de entrega.
+- Garantir a segurança e eficiência no transporte dos produtos.</p>
+<p>🔹 <strong>Principais necessidades</strong>:
+- Integração via API para atualização de status.
+- Automação de cálculo de frete e tempo estimado de entrega.
+- Registro de reclamações e suporte para problemas logísticos.</p>
+<h2 id="conclusao_2">Conclusão<a class="headerlink" href="#conclusao_2" title="Permanent link">&para;</a></h2>
+<p>A definição clara das personas no <strong>Bazarium</strong> permite um desenvolvimento mais focado nas necessidades específicas de cada usuário. Com essa segmentação, a plataforma pode otimizar a experiência e garantir um funcionamento eficiente para compradores, vendedores, administradores e parceiros logísticos.</p>
+<h1 id="jornadas-do-usuario-no-bazarium">Jornadas do Usuário no Bazarium<a class="headerlink" href="#jornadas-do-usuario-no-bazarium" title="Permanent link">&para;</a></h1>
+<h2 id="introducao_3">Introdução<a class="headerlink" href="#introducao_3" title="Permanent link">&para;</a></h2>
+<p>As jornadas dos usuários no <strong>Bazarium</strong> representam o fluxo de interações dentro da plataforma, garantindo que cada perfil de usuário tenha uma experiência eficiente e intuitiva. A seguir, são detalhadas as principais jornadas para cada persona.</p>
+<hr />
+<h2 id="jornada-do-comprador">🛒 <strong>Jornada do Comprador</strong><a class="headerlink" href="#jornada-do-comprador" title="Permanent link">&para;</a></h2>
+<h3 id="1-cadastro-e-autenticacao">1️⃣ <strong>Cadastro e Autenticação</strong><a class="headerlink" href="#1-cadastro-e-autenticacao" title="Permanent link">&para;</a></h3>
+<ul>
+<li>O usuário acessa a plataforma e inicia o cadastro.</li>
+<li>Informa dados pessoais e cria uma conta.</li>
+<li>Realiza autenticação via e-mail ou autenticação multifator (MFA).</li>
+</ul>
+<h3 id="2-busca-e-selecao-de-produtos">2️⃣ <strong>Busca e Seleção de Produtos</strong><a class="headerlink" href="#2-busca-e-selecao-de-produtos" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Utiliza filtros e categorias para encontrar produtos.</li>
+<li>Visualiza detalhes, avaliações e comparações.</li>
+<li>Adiciona itens ao carrinho de compras.</li>
+</ul>
+<h3 id="3-processo-de-compra-e-pagamento">3️⃣ <strong>Processo de Compra e Pagamento</strong><a class="headerlink" href="#3-processo-de-compra-e-pagamento" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Revisa os produtos no carrinho.</li>
+<li>Escolhe o método de pagamento e confirma a compra.</li>
+<li>Recebe notificação sobre a aprovação do pagamento.</li>
+</ul>
+<h3 id="4-acompanhamento-de-pedido-e-entrega">4️⃣ <strong>Acompanhamento de Pedido e Entrega</strong><a class="headerlink" href="#4-acompanhamento-de-pedido-e-entrega" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Recebe atualizações sobre status do pedido.</li>
+<li>Consulta código de rastreamento da transportadora.</li>
+<li>Confirma recebimento do produto.</li>
+</ul>
+<h3 id="5-avaliacao-do-produto-e-vendedor">5️⃣ <strong>Avaliação do Produto e Vendedor</strong><a class="headerlink" href="#5-avaliacao-do-produto-e-vendedor" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Registra feedback sobre a experiência de compra.</li>
+<li>Atribui nota e comentários ao produto e ao vendedor.</li>
+</ul>
+<h3 id="6-solicitacao-de-suporte-ou-devolucao">6️⃣ <strong>Solicitação de Suporte ou Devolução</strong><a class="headerlink" href="#6-solicitacao-de-suporte-ou-devolucao" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Acessa a central de ajuda.</li>
+<li>Solicita reembolso ou troca conforme política de devolução.</li>
+</ul>
+<hr />
+<h2 id="jornada-do-vendedor">🏪 <strong>Jornada do Vendedor</strong><a class="headerlink" href="#jornada-do-vendedor" title="Permanent link">&para;</a></h2>
+<h3 id="1-cadastro-e-configuracao-da-loja">1️⃣ <strong>Cadastro e Configuração da Loja</strong><a class="headerlink" href="#1-cadastro-e-configuracao-da-loja" title="Permanent link">&para;</a></h3>
+<ul>
+<li>O vendedor cria uma conta e define perfil comercial.</li>
+<li>Configura métodos de pagamento e políticas de envio.</li>
+</ul>
+<h3 id="2-gestao-de-produtos-e-estoque">2️⃣ <strong>Gestão de Produtos e Estoque</strong><a class="headerlink" href="#2-gestao-de-produtos-e-estoque" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Cadastra novos produtos com descrições e imagens.</li>
+<li>Define preços e controle de estoque.</li>
+<li>Publica e gerencia ofertas e promoções.</li>
+</ul>
+<h3 id="3-recebimento-e-processamento-de-pedidos">3️⃣ <strong>Recebimento e Processamento de Pedidos</strong><a class="headerlink" href="#3-recebimento-e-processamento-de-pedidos" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Recebe notificações sobre novas vendas.</li>
+<li>Confirma a disponibilidade do produto.</li>
+<li>Organiza e despacha o pedido via transportadora.</li>
+</ul>
+<h3 id="4-atendimento-ao-cliente-e-avaliacoes">4️⃣ <strong>Atendimento ao Cliente e Avaliações</strong><a class="headerlink" href="#4-atendimento-ao-cliente-e-avaliacoes" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Responde perguntas de compradores.</li>
+<li>Gerencia avaliações e feedbacks recebidos.</li>
+</ul>
+<h3 id="5-monitoramento-e-relatorios">5️⃣ <strong>Monitoramento e Relatórios</strong><a class="headerlink" href="#5-monitoramento-e-relatorios" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Acompanha métricas de vendas e desempenho.</li>
+<li>Ajusta estratégias de preço e marketing com base nos relatórios.</li>
+</ul>
+<hr />
+<h2 id="jornada-do-administrador-do-marketplace">🛠 <strong>Jornada do Administrador do Marketplace</strong><a class="headerlink" href="#jornada-do-administrador-do-marketplace" title="Permanent link">&para;</a></h2>
+<h3 id="1-monitoramento-da-plataforma">1️⃣ <strong>Monitoramento da Plataforma</strong><a class="headerlink" href="#1-monitoramento-da-plataforma" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Supervisiona métricas gerais de tráfego e transações.</li>
+<li>Garante conformidade com regulamentações e políticas.</li>
+</ul>
+<h3 id="2-gerenciamento-de-disputas-e-moderacao">2️⃣ <strong>Gerenciamento de Disputas e Moderação</strong><a class="headerlink" href="#2-gerenciamento-de-disputas-e-moderacao" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Avalia disputas entre compradores e vendedores.</li>
+<li>Modera avaliações e interações na plataforma.</li>
+</ul>
+<h3 id="3-seguranca-e-compliance">3️⃣ <strong>Segurança e Compliance</strong><a class="headerlink" href="#3-seguranca-e-compliance" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Implementa medidas contra fraudes.</li>
+<li>Analisa transações suspeitas.</li>
+</ul>
+<h3 id="4-campanhas-e-promocoes">4️⃣ <strong>Campanhas e Promoções</strong><a class="headerlink" href="#4-campanhas-e-promocoes" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Configura promoções globais da plataforma.</li>
+<li>Dispara notificações e campanhas para usuários.</li>
+</ul>
+<hr />
+<h2 id="jornada-do-gateway-de-pagamento">💳 <strong>Jornada do Gateway de Pagamento</strong><a class="headerlink" href="#jornada-do-gateway-de-pagamento" title="Permanent link">&para;</a></h2>
+<h3 id="1-autorizacao-de-pagamento">1️⃣ <strong>Autorização de Pagamento</strong><a class="headerlink" href="#1-autorizacao-de-pagamento" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Recebe requisição de pagamento.</li>
+<li>Processa autorização ou recusa.</li>
+<li>Informa a plataforma sobre o status do pagamento.</li>
+</ul>
+<h3 id="2-emissao-de-nota-fiscal-e-confirmacao">2️⃣ <strong>Emissão de Nota Fiscal e Confirmação</strong><a class="headerlink" href="#2-emissao-de-nota-fiscal-e-confirmacao" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Gera nota fiscal eletrônica após pagamento aprovado.</li>
+<li>Envia confirmação para o comprador e vendedor.</li>
+</ul>
+<h3 id="3-gerenciamento-de-reembolsos">3️⃣ <strong>Gerenciamento de Reembolsos</strong><a class="headerlink" href="#3-gerenciamento-de-reembolsos" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Recebe solicitações de estorno.</li>
+<li>Processa devoluções de valores conforme política da plataforma.</li>
+</ul>
+<hr />
+<h2 id="jornada-da-transportadora">🚚 <strong>Jornada da Transportadora</strong><a class="headerlink" href="#jornada-da-transportadora" title="Permanent link">&para;</a></h2>
+<h3 id="1-calculo-de-frete">1️⃣ <strong>Cálculo de Frete</strong><a class="headerlink" href="#1-calculo-de-frete" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Recebe requisição de cálculo com base no endereço do comprador.</li>
+<li>Retorna valor e prazo estimado para entrega.</li>
+</ul>
+<h3 id="2-coleta-e-envio-do-pedido">2️⃣ <strong>Coleta e Envio do Pedido</strong><a class="headerlink" href="#2-coleta-e-envio-do-pedido" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Recebe notificação de pedido pronto para envio.</li>
+<li>Gera código de rastreamento.</li>
+<li>Transporta o produto até o comprador.</li>
+</ul>
+<h3 id="3-atualizacao-de-status-e-confirmacao-de-entrega">3️⃣ <strong>Atualização de Status e Confirmação de Entrega</strong><a class="headerlink" href="#3-atualizacao-de-status-e-confirmacao-de-entrega" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Atualiza status de envio em tempo real.</li>
+<li>Confirma entrega bem-sucedida na plataforma.</li>
+</ul>
+<hr />
+<h2 id="conclusao_3">Conclusão<a class="headerlink" href="#conclusao_3" title="Permanent link">&para;</a></h2>
+<p>A definição das jornadas no <strong>Bazarium</strong> permite uma estruturação clara dos fluxos de interação dos usuários. Isso garante que todas as personas tenham uma experiência otimizada e que os processos sejam organizados para eficiência e escalabilidade da plataforma.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tabs", "navigation.expand", "toc.integrate", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      
+    
+  </body>
+</html>
